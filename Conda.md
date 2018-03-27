@@ -32,7 +32,7 @@ snowflakes            /home/username/miniconda/envs/snowflakes
 bunnies               /home/username/miniconda/envs/bunnies
 ```
 
-** Single install **
+**Single install**
 
     conda install -c conda-forge opencv
 
