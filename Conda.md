@@ -18,6 +18,7 @@
 
 	source activate myenv
 	
+	
 **Listing all envs**
 
 	conda env list
@@ -31,6 +32,10 @@ snowflakes            /home/username/miniconda/envs/snowflakes
 bunnies               /home/username/miniconda/envs/bunnies
 ```
 
+** Single install **
+
+    conda install -c conda-forge opencv
+
 **Sharing an environment**
 
 	source activate myenv
@@ -43,6 +48,7 @@ bunnies               /home/username/miniconda/envs/bunnies
 	  - javascript/nodefaults
 	dependencies:
 	  - python=3.4   # or 2.7
+	  - opencv=3.4.1
 	  - bokeh=0.9.2
 	  - numpy=1.9.*
 	  - nodejs=0.10.*
