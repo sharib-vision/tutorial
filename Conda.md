@@ -34,7 +34,7 @@ bunnies               /home/username/miniconda/envs/bunnies
 
 **Single install**
 
-    conda install -c conda-forge opencv
+    conda install -c conda-forge opencv=3.4.1
 
 **Sharing an environment**
 
