@@ -20,7 +20,7 @@ To activate the enviroment just type:
 source activate myenv 
 ```
 
-More information about anaconda enviroments can be found (here)[https://susanqq.github.io/jekyll/pixyll/2017/09/05/remotefiles/].
+More information about anaconda enviroments can be found [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
 
 
@@ -34,9 +34,10 @@ sudo sshfs -o allow_other,defer_permissions username@rescomp1.well.ox.ac.uk:/wel
 ```
 
 #Start an interative session on a node:
+
 ```
 qlogin -P rittscher.prjb -q short.qb -pe shmem 1
-
+```
 
 #Start a jupyter notebook in an interactive server:
 
@@ -54,7 +55,8 @@ and paste the link in your local browser and execute jupyter scripts.
 Sometimes the port might be in use. Then change the port and start again.
 
 #Run applications using GUI: 
-In OSX you need to install and open (XQuartz)[https://www.xquartz.org/].
+
+In OSX you need to install and open [XQuartz](https://www.xquartz.org/).
 
 Then loging to the server enabling X11 forwarding.
 ```
