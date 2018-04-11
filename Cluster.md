@@ -23,6 +23,27 @@ source activate myenv
 More information about anaconda enviroments can be found [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
 
+# Example of a script file to send to the cluster queue:
+
+```
+#!/bin/bash
+
+#$ -N test-job # name of the job
+#$ -P rittscher.prjb -q short.qb #specify to which node queue we send the job (I havent figure out how to send it to the GPU node)
+ 
+echo "Username: " `whoami`
+echo $HOME
+
+module use -a /mgmt/modules/eb/modules/all
+module load Anaconda3/5.1.0
+source activate myenv #activate your local enviroment.
+
+#Here I am assuming pytorch is installed. I am just printing the number of GPU cards available.
+python -c "import torch; print('N GPU: {}'.format(torch.cuda.device_count()))"
+
+echo "Finished at :"`date`
+exit 0
+```
 
 # Mount the group data directory using ssh (on mac):
 [Here](https://susanqq.github.io/jekyll/pixyll/2017/09/05/remotefiles/) are instructions.
