@@ -63,7 +63,7 @@ scp -r fullPathofYourLocalDirectory username@rescomp1.well.ox.ac.uk:/well/rittsc
 # Start an interative session on a node:
 
 ```
-qlogin -P rittscher.prjb -q short.qb -pe shmem 1
+qlogin -P rittscher.prjb -q short.qb -pe shmem 1 (prj* -q short.q*, '*'--> a/b/c)
 ```
 
 # Start a jupyter notebook in an interactive server:
