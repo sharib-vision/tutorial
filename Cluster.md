@@ -126,6 +126,8 @@ qconf -sql
 
 qload -u $USER
 
+qload -nh -v
+
 ```
 
 Assigning your job to a specific node (TODO: need to be checked!!):
@@ -136,6 +138,13 @@ qsub -q gpu.q@compG002  -N testGPU myScript.sh (use qhost -q to check possibilit
 
 qsub -q himem.qh@compH000 -N testHighMem myScript.sh
 
+
+```
+
+Check softwares on the server *before you install one*:
+
+```
+/apps/well/
 
 ```
 
