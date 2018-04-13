@@ -146,6 +146,8 @@ Check softwares on the server *before you install one*:
 ```
 /apps/well/
 
+/mgmt/modules/eb/modules (see above to load modules)
+
 ```
 
 
