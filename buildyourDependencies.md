@@ -1,24 +1,25 @@
 ### Installed packages
 
 
-  1. conda (installed with python 3.6)
+#### conda (installed with python 3.6)
   [link](https://conda.io/miniconda.html)
   	
   		bash Miniconda3-latest-MacOSX-x86_64.sh
 
-  2. Essentials
-
-
-	   cmake3.9.4 (conda install -c anaconda cmake)
-	   conda install -c anaconda *git* (also includes perl package 5.26)
-            conda install -c menpo eigen  (eigen 3.2.7)
-            pip install numpy scipy matplotlib scikit-image scikit-learn ipython pandas
-
-  3. openCV
-	[link](https://gist.github.com/jruizvar/0535fb8612afb105e0eef64051dc0d00)
-
-    	git clone https://github.com/opencv/opencv.git
-    	git clone https://github.com/opencv/opencv_contrib.git
+#### Essentials
+```
+cmake3.9.4 (conda install -c anaconda cmake)
+conda install -c anaconda *git* (also includes perl package 5.26)
+conda install -c menpo eigen  (eigen 3.2.7)
+pip install numpy scipy matplotlib scikit-image scikit-learn ipython pandas
+```
+	 
+#### openCV
+ [link](https://gist.github.com/jruizvar/0535fb8612afb105e0eef64051dc0d00)
+```
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git
+```
 	
 
 		mkdir build
@@ -46,26 +47,27 @@
 
 ###### Fixing problem with matplotlib
 
-		- brew install python3
-		- brew install freetype
-		- brew install pkg-config
-		- sudo pip3 install matplotlib
+- brew install python3
+- brew install freetype
+- brew install pkg-config
+- sudo pip3 install matplotlib
 
 			
-4. ITK
+#### ITK
+```
+git clone https://github.com/InsightSoftwareConsortium/ITK.git
+```
 
-		git clone https://github.com/InsightSoftwareConsortium/ITK.git
-		
-	Building with previous subversions:[link](https://itk.org/Wiki/ITK/Git/Download)
+Building with previous subversions:[link](https://itk.org/Wiki/ITK/Git/Download)
 	
-	Python wrapping [link](https://itk.org/Wiki/ITK/Python_Wrapping)
+Python wrapping [link](https://itk.org/Wiki/ITK/Python_Wrapping)
 	
-	`error: python library mismatch`
+`error: python library mismatch`
 	
-	`fix: -DPYTHON_EXECUTABLE=/usr/bin/python2.7`
+`fix: -DPYTHON_EXECUTABLE=/usr/bin/python2.7`
 	
-	ITKPython Package ready [link](http://itkpythonpackage.readthedocs.io/en/latest/)
+ITKPython Package ready [link](http://itkpythonpackage.readthedocs.io/en/latest/)
 	
 	
 		
-5. brew install parallel
+#### brew install parallel
