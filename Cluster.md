@@ -54,6 +54,12 @@ In brief install osxfuse and sshfs using homebrew. You can mount the files typin
 sudo sshfs -o allow_other,defer_permissions username@rescomp1.well.ox.ac.uk:/well/rittscher/users/ /Volumes/rescomp1
 ```
 
+# Copy data to group data directory using ssh directly (linux/mac):
+
+```
+scp -r fullPathofYourLocalDirectory username@rescomp1.well.ox.ac.uk:/well/rittscher/users/yourAccountName
+```
+
 # Start an interative session on a node:
 
 ```
@@ -87,10 +93,51 @@ ssh -X username@rescomp1.well.ox.ac.uk
 Go ahead and open any GUI you need.
 
 
+# Run your script in cluster: 
+
+[Here](https://github.com/BIMSBbioinfo/intro2UnixandSGE/blob/master/sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.md) are instructions 
+
+Few most commonly used:
+
+```
+qsub myScript.sh 
+
+qsub -l h_vmem=1G,h_rt=01:50:20 -N testCluster myScript.sh
+
+```
+
+To see the jobs in queue or all:
+
+```
+qstat -u $USER
+
+qstat -s p/r
+
+qsum -u $USER (compact summary, use -h for help)
+
+```
+
+Check/monitor state of execution hosts:
+
+```
+qhost -q
+
+qconf -sql
+
+qload -u $USER
+
+```
+
+Assigning your job to a specific node (TODO: need to be checked!!):
+
+```
+
+qsub -q gpu.q@compG002  -N testGPU myScript.sh (use qhost -q to check possibilities)
+
+qsub -q himem.qh@compH000 -N testHighMem myScript.sh
 
 
-
-
+```
 
 
 
