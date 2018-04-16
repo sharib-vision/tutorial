@@ -28,17 +28,16 @@ More information about anaconda enviroments can be found [here](https://conda.io
 ```
 #!/bin/bash
 
-#$ -N test-job # name of the job
-#$ -P rittscher.prjb -q short.qb #specify to which node queue we send the job (I havent figure out how to send it to the GPU node)
+#$ -P rittscher.prjb -q gpu8.q@compG000
+#$ -l gpu=1 
  
 echo "Username: " `whoami`
 echo $HOME
 
 module use -a /mgmt/modules/eb/modules/all
 module load Anaconda3/5.1.0
-source activate myenv #activate your local enviroment.
+source activate tierpsy #activate your local enviroment.
 
-#Here I am assuming pytorch is installed. I am just printing the number of GPU cards available.
 python -c "import torch; print('N GPU: {}'.format(torch.cuda.device_count()))"
 
 echo "Finished at :"`date`
