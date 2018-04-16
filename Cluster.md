@@ -66,6 +66,11 @@ scp -r fullPathofYourLocalDirectory username@rescomp1.well.ox.ac.uk:/well/rittsc
 qlogin -P rittscher.prjb -q short.qb -pe shmem 1 (prj* -q short.q*, '*'--> a/b/c)
 ```
 
+For GPU clusters you have to specify the number of gpu's or you will not be allowed to start the session.
+```
+qlogin -P rittscher.prjb -q gpu8.q -pe shmem 1 -l gpu=1
+```
+
 # Start a jupyter notebook in an interactive server:
 
 Start a remote session using tunneling: 
