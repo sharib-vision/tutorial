@@ -59,6 +59,12 @@ sudo sshfs -o allow_other,defer_permissions username@rescomp1.well.ox.ac.uk:/wel
 scp -r fullPathofYourLocalDirectory username@rescomp1.well.ox.ac.uk:/well/rittscher/users/yourAccountName
 ```
 
+or 
+
+```
+rsync -aP fullPathofYourLocalDirectory username@rescomp1.well.ox.ac.uk:/well/rittscher/users/yourAccountName
+```
+
 # Start an interative session on a node:
 
 ```
