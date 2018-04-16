@@ -14,6 +14,12 @@ conda env create -f environment.yml
 source activate kerasBackEndTFlow
 
 ```
+- To check all your installed packages
+
+```
+conda list (check if all packages that you want are installed correctly)
+pip list (if you have installed using pip)
+```
 
 - To test the gpu (will only show no error if GPU is available)
 
