@@ -28,7 +28,7 @@ More information about anaconda enviroments can be found [here](https://conda.io
 ```
 #!/bin/bash
 
-#$ -P rittscher.prjb -q gpu8.q@compG000
+#$ -P rittscher.prjb -q gpu8.q@
 #$ -l gpu=1 
  
 echo "Username: " `whoami`
