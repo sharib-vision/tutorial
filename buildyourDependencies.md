@@ -75,4 +75,4 @@ ITKPython Package ready [link](http://itkpythonpackage.readthedocs.io/en/latest/
 
 #### Tensor flow with speed-up architechtures (SSE4.1 SSE4.2 AVX)
 
-    Follow this [link](https://github.com/lakshayg/tensorflow-build) and this [post](https://github.com/tensorflow/tensorflow/issues/8037)
+- Follow this [link](https://github.com/lakshayg/tensorflow-build) and this [post](https://github.com/tensorflow/tensorflow/issues/8037)
