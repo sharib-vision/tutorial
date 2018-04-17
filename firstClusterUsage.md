@@ -40,7 +40,7 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 If above prints you the name of the GPU then voila you are ready to go!
 
 
-- To use cluster and notebook (see [here](https://gitlab.com/sharibOx/tutorials/blob/master/Cluster.md) )
+- To use cluster and notebook (see [here](https://gitlab.com/sharibOx/tutorials/blob/master/clusterRescomp.md) )
 
 
 
