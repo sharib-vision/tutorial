@@ -42,7 +42,7 @@ If above prints you the name of the GPU then voila you are ready to go!
 
 - To use cluster and notebook (see [here](https://gitlab.com/sharibOx/tutorials/blob/master/clusterRescomp.md) )
 
-
+About gpu see [here](https://rescomp.well.ox.ac.uk/wiki/Using_the_Rescomp_GPU_resources) <--- requires your credentials
 
 **Note if you go into different node then you will need to do activate your environment again (before that use `module use -a /mgmt/modules/eb/modules/all` + `module load Anaconda3/5.1.0`)**
 
