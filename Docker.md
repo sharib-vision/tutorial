@@ -53,4 +53,15 @@
 		
 		docker image rm $(docker image ls -a -q)
 		
+	- remove forcefully
+	
+        docker stop $(docker ps -a -q)
+        docker rm $(docker ps -a -q)
+    
+        'or'
+
+        docker rm -f $(docker ps -a -q)
+    
+        
+		
 		 
