@@ -1,4 +1,4 @@
-# Load Anaconda + Cuda 9.0
+# Load Anaconda
 
 Before executing of submiting a task you have to load the modules you will need:
 
@@ -14,10 +14,22 @@ Before installing any python package it is recommended to create an enviroment a
 conda create --name myenv 
 ```
 
+You can create a new enviroment with all your required packages using a a .yml file like:
+
+```
+conda create -f my_packages.yml 
+```
+
 To activate the enviroment just type:
 
 ```
 source activate myenv 
+```
+
+If you forgot any packages in your enviorment you can add new ones using:
+
+```
+conda install package_name 
 ```
 
 More information about anaconda enviroments can be found [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
