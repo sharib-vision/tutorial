@@ -5,7 +5,6 @@ Before executing of submiting a task you have to load the modules you will need:
 ```
 module use -a /mgmt/modules/eb/modules/all #Add the path where the Anacoda module is located.
 module load Anaconda3/5.1.0
-module load cuda/9.0 
 ```
 
 Before installing any python package it is recommended to create an enviroment as:
@@ -40,15 +39,12 @@ More information about anaconda enviroments can be found [here](https://conda.io
 ```
 #!/bin/bash
 
-#$ -P rittscher.prjb -q gpu8.q@
+#$ -P rittscher.prjb -q gpu9.q
 #$ -l gpu=1 
- 
-echo "Username: " `whoami`
-echo $HOME
 
 module use -a /mgmt/modules/eb/modules/all
 module load Anaconda3/5.1.0
-source activate tierpsy #activate your local enviroment.
+source activate pytorch90-env
 
 python -c "import torch; print('N GPU: {}'.format(torch.cuda.device_count()))"
 
