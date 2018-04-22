@@ -27,7 +27,9 @@
 - Docker is actually a process in host machine rather than a Virtual Machine
 
 *Example*
- 2. Using image ''ngnix'''
+ 
+ Using image ``gnix``
+ 
     `docker container run --publish 80:80 nginx`
     
     once running, open your  browser and type: localhost and enter
