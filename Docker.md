@@ -18,6 +18,18 @@
 6. You can shutdown VM and then change settings (like memory) or docker-machine ls (/start/stop etc...) 
 7. Make sure the code in C:\Users only (Bind Mounts)
 2. docker run hello-world
+3. 
+** Container and image**
+- Image: build in binaries that we want to run -
+- Container: is an instance of the image running as a process (can be many of the same image)
+- Docker Hub (hub.docker.com): default image registry
+
+*Example*
+2. Using image ''ngnix'''
+    `docker container run --publish 80:80 nginx`
+
+
+
 3. write your container file (**_Dockerfile_** [Link](/Users/shariba/Documents/deployment))
 
 		FROM ubuntu:14.04
