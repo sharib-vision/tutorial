@@ -24,6 +24,7 @@
 - Image: build in binaries that we want to run -
 - Container: is an instance of the image running as a process (can be many of the same image)
 - Docker Hub (hub.docker.com): default image registry (a remote image repository)
+- Docker is actually a process in host machine rather than a Virtual Machine
 
 *Example*
  2. Using image ''ngnix'''
@@ -35,8 +36,9 @@
     
      `docker container run --publish 80:80  --detach --name $yourpreferredName nginx`
      `docker container logs $yourpreferredName`
+     `docker top $yourpreferredName`
      
-     To stop: 
+    To stop: 
      `docker container stop first 3 nos of containerID (docker container ls -a should show exited)`
      
     To remove container:
