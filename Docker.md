@@ -28,7 +28,7 @@
 
 *Example*
  
- Using image ``gnix``
+ Using image ``ngnix``
  
     `docker container run --publish 80:80 nginx`
     
@@ -50,37 +50,39 @@
     
 
 
-3. write your container file (**_Dockerfile_** [Link](/Users/shariba/Documents/deployment))
+ write your container file (**_Dockerfile_** [Link](/Users/shariba/Documents/deployment))
 
 		FROM ubuntu:14.04
 	    RUN apt-get update
 	    RUN apt-get install -y curl
 	
 
-4. build 
+ **build** 
 
-	- docker build -t myfirstdocker:latest .  
+	` docker build -t myfirstdocker:latest .  `
 		
-	- Create image using this directory's Dockerfile
+	---> Create image using this directory's Dockerfile
+	
+	See the list of containers
 		
 		`docker container ls -a` 
 		
 		
-4. bind volumes [link](https://docs.docker.com/storage/volumes/)
+ **bind volumes** [link](https://docs.docker.com/storage/volumes/)
 
 		$ docker run -d \
 	  		--name=nginxtest \
 	 		-v nginx-vol:/usr/share/nginx/html \
 	  		myFirstDocker:latest
 	
-5. run
+ **run**
 		
 	 `docker run -p 4000:80 myfirstdocker:latest ` 
 	--> Run "myfirstdocker:latest" mapping port 4000 to 80
 		
 	 `sudo docker run -ti --rm myfirstdocker:latest  /bin/bash`
 
-6. register and run
+**register and run**
 	
 	   ` docker push username/repository:tag  `
 
@@ -92,7 +94,7 @@
 	
 	
 
-6. remove/stop
+**remove/stop**
 
 		`docker container rm <hash>`
 		`docker image rm <image id> `
