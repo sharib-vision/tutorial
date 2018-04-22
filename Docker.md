@@ -20,7 +20,7 @@
 2. docker run hello-world
 
 
-** Container and image**
+**Container and image**
 - Image: build in binaries that we want to run -
 - Container: is an instance of the image running as a process (can be many of the same image)
 - Docker Hub (hub.docker.com): default image registry
@@ -28,6 +28,27 @@
 *Example*
 2. Using image ''ngnix'''
     `docker container run --publish 80:80 nginx`
+    
+    once running, open your  browser and type: localhost and enter
+
+    To run in background
+    
+     `docker container run --publish 80:80  --detach --name $yourpreferredName nginx`
+     `docker container logs $yourpreferredName`
+     
+     To stop: 
+     `docker container stop first 3 nos of containerID (docker container ls -a should show exited)`
+     
+    To remove container:
+    `docker container rm -f 3digits`
+    
+    
+    
+
+3. 
+    
+
+
 
 
 
