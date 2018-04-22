@@ -54,15 +54,14 @@
 	
 
  **build** 
-
-	` docker build -t myfirstdocker:latest .  `
-		
-	---> Create image using this directory's Dockerfile
 	
-	See the list of containers
+` docker build -t myfirstdocker:latest .  `
 		
-		`docker container ls -a` 
-		
+---> Create image using this directory's Dockerfile
+	
+See the list of containers
+
+`docker container ls -a` 
 		
  **bind volumes** [link](https://docs.docker.com/storage/volumes/)
 
@@ -72,40 +71,44 @@
 	  		myFirstDocker:latest
 	
  **run**
-		
-	 `docker run -p 4000:80 myfirstdocker:latest ` 
-	--> Run "myfirstdocker:latest" mapping port 4000 to 80
-		
-	 `sudo docker run -ti --rm myfirstdocker:latest  /bin/bash`
+ 
+`docker run -p 4000:80 myfirstdocker:latest ` 
+
+--> Run "myfirstdocker:latest" mapping port 4000 to 80
+	
+`sudo docker run -ti --rm myfirstdocker:latest  /bin/bash`
 
 **register and run**
-	
-	   ` docker push username/repository:tag  `
+	`
+`docker push username/repository:tag  `
 
-	- Upload tagged image to registry
+- Upload tagged image to registry
+
+`docker run username/repository:tag  `
 		
-		`docker run username/repository:tag  `
-		
-	- Run image from a registry
+- Run image from a registry
 	
 	
 
 **remove/stop**
 
-		`docker container rm <hash>`
-		`docker image rm <image id> `
+`docker container rm <hash>`
+
+`docker image rm <image id> `
 		
-		- Removes all:
-		
-	    	` docker container rm $(docker container ls -a -q) `
-             `docker image rm $(docker image ls -a -q)`
+- Removes all:
+
+`docker container rm $(docker container ls -a -q) `
+
+`docker image rm $(docker image ls -a -q)`
       
-	    - Forcefull:
-			` docker container rm -f $(docker container ls -a -q) `
+- Forcefull:
 		
-	    - stop
+`docker container rm -f $(docker container ls -a -q) `
+		
+- stop
 	
-            `docker stop $(docker ps -a -q)`
+`docker stop $(docker ps -a -q)`
       
     
     
