@@ -9,7 +9,7 @@
     `curl -sSL https://get.docker.com/ | sh
     sudo usermod -aG docker $UserName`
 
-3. Install docker machine, docker compose
+3. Install docker-machine, docker-compose
 4. Install docker in visual studio code (in mac put the application/visual.../bin in your .bash_profile)
 5. Do code . from the folder of docker user folder (i.e. place with your codes that you want to create an image file)
 3. For windows 10 pro/ent you can use docker (go to 1, use powershell, use docker version) otherwise only Docker Toolbox available (see 5)
