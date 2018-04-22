@@ -35,7 +35,9 @@
     To run in background
     
      `docker container run --publish 80:80  --detach --name $yourpreferredName nginx`
+     
      `docker container logs $yourpreferredName`
+     
      `docker top $yourpreferredName`
      
     To stop: 
