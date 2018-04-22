@@ -29,14 +29,10 @@
 *Example*
  
  Using image ``ngnix``
- 
-    `docker container run --publish 80:80 nginx`
-    
-    once running, open your  browser and type: localhost and enter
-
-    To run in background
-    
-     `docker container run --publish 80:80  --detach --name $yourpreferredName nginx`
+  `docker container run --publish 80:80 nginx`
+ - once running, open your  browser and type: localhost and enter
+ - To run in background
+    `docker container run --publish 80:80  --detach --name $yourpreferredName nginx`
      
      `docker container logs $yourpreferredName`
      
