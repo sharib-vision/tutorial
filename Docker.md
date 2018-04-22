@@ -3,6 +3,20 @@
 **Install**
 
 1. [Download](https://store.docker.com/search?type=edition&offering=community)
+2. (Opt) Install visual studio code, bash-completion (can be installed with brew then link installing bash completion given in docker doc) 
+2. Dockers automated script to add repository and install all dependencies in Linux
+    
+    `curl -sSL https://get.docker.com/ | sh
+    sudo usermod -aG docker $UserName`
+
+3. Install docker machine, docker compose
+4. Install docker in visual studio code (in mac put the application/visual.../bin in your .bash_profile)
+5. Do code . from the folder of docker user folder (i.e. place with your codes that you want to create an image file)
+3. For windows 10 pro/ent you can use docker (go to 1, use powershell, use docker version) otherwise only Docker Toolbox available (see 5)
+4. You can install posh-docker (see docker docs for details, this is just auto-completion for docker commands, extra tools: Cmder.net, download and extract to run (unblock before zipping)-->docker machine env default--> copy and paster last line)
+5. Win7/8/10 home: Runs tiny linux VM in virtualBox via docker-machine (go to store and click on Dockertoolbox --> check all options)
+6. You can shutdown VM and then change settings (like memory) or docker-machine ls (/start/stop etc...) 
+7. Make sure the code in C:\Users only (Bind Mounts)
 2. docker run hello-world
 3. write your container file (**_Dockerfile_** [Link](/Users/shariba/Documents/deployment))
 
