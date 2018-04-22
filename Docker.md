@@ -23,10 +23,10 @@
 **Container and image**
 - Image: build in binaries that we want to run -
 - Container: is an instance of the image running as a process (can be many of the same image)
-- Docker Hub (hub.docker.com): default image registry
+- Docker Hub (hub.docker.com): default image registry (a remote image repository)
 
 *Example*
-2. Using image ''ngnix'''
+ 2. Using image ''ngnix'''
     `docker container run --publish 80:80 nginx`
     
     once running, open your  browser and type: localhost and enter
@@ -42,14 +42,6 @@
     To remove container:
     `docker container rm -f 3digits`
     
-    
-    
-
-3. 
-    
-
-
-
 
 
 3. write your container file (**_Dockerfile_** [Link](/Users/shariba/Documents/deployment))
