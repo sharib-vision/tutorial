@@ -29,7 +29,7 @@ conda list (check if all packages that you want are installed correctly)
 pip list (if you have installed using pip)
 ```
 
-- To test the gpu (will only show no error if GPU is available)
+- To test the gpu (will only show no error if GPU is available or see [here](https://www.tensorflow.org/programmers_guide/using_gpu))
 
 ```
 import tensorflow as tf
@@ -49,7 +49,10 @@ About gpu see [here](https://rescomp.well.ox.ac.uk/wiki/Using_the_Rescomp_GPU_re
 - With torch for gpu
 
 torch.cuda.is_available()
+
 torch.cuda.init()
+
 torch.cuda.get_device_name(0)
+
 torch.cuda.device_count()
 
