@@ -103,6 +103,11 @@ $ python
 >> print(device_lib.list_local_devices())
 
 ```
+Same test as above but in one line (I recommend above as it will give you clean info.): 
+
+```shell
+python -c "import tensorflow as tf;print('version:',tf.__version__);from tensorflow.python.client import device_lib;print(device_lib.list_local_devices())"
+```
 
 For compG002, you should get: 
 
