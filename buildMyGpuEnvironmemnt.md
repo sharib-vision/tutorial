@@ -29,12 +29,12 @@ $ source activate alitorch
 ### Tensorflow and keras
 
 ```Tensorflow-gpu:
-   (aligpu) $conda install -c anaconda tensorflow-gpu
+(aligpu) $conda install -c anaconda tensorflow-gpu
 
 ```
 
 ```Keras-GPU:
-  (aligpu) $ conda install -c anaconda keras-gpu
+(aligpu) $ conda install -c anaconda keras-gpu
 ```
 
 ### Visualization with tensorboard-pytorch
@@ -58,10 +58,11 @@ $ source activate aligpu
 
     For other packages just use 
    
-   ``` shell
-    (aligpu) $ conda install $packagename
-    (aligpu) $ pip install $packagename
-    ```
+``` shell
+(aligpu) $ conda install $packagename
+(aligpu) $ pip install $packagename
+
+```
 
 
 
