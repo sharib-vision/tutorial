@@ -6,8 +6,10 @@
 2. (Opt) Install visual studio code, bash-completion (can be installed with brew then link installing bash completion given in docker doc) 
 2. Dockers automated script to add repository and install all dependencies in Linux
     
-    `curl -sSL https://get.docker.com/ | sh
-    sudo usermod -aG docker $UserName`
+    ```shell
+    $ curl -sSL https://get.docker.com/ | sh
+    $ sudo usermod -aG docker $UserName
+    ```
 
 3. Install docker-machine, docker-compose
 4. Install docker in visual studio code (in mac put the application/visual.../bin in your .bash_profile)
@@ -29,20 +31,27 @@
 *Example*
  
  Using image ``ngnix``
-  `docker container run --publish 80:80 nginx`
+
+   ```shell
+  $ docker container run --publish 80:80 nginx
+  ```
  - once running, open your  browser and type: localhost and enter
  - To run in background
-    `docker container run --publish 80:80  --detach --name $yourpreferredName nginx`
-     
-     `docker container logs $yourpreferredName`
-     
-     `docker top $yourpreferredName`
+   ```shell
+    $ docker container run --publish 80:80  --detach --name $yourpreferredName nginx
+    $ docker container logs $yourpreferredName`
+    $ docker top $yourpreferredName
+    ```
      
     To stop: 
-     `docker container stop first 3 nos of containerID (docker container ls -a should show exited)`
+     ```shell
+     $ docker container stop first 3 nos of containerID (docker container ls -a should show exited)
+     ```
      
     To remove container:
-    `docker container rm -f 3digits`
+     ```shell
+    $ docker container rm -f 3digits
+    ```
     
 
 
@@ -55,13 +64,17 @@
 
  **build** 
 	
-` docker build -t myfirstdocker:latest .  `
+  ```shell
+$ docker build -t myfirstdocker:latest . 
+```
 		
 ---> Create image using this directory's Dockerfile
 	
 See the list of containers
 
-`docker container ls -a` 
+  ```shell
+$ docker container ls -a
+``` 
 		
  **bind volumes** [link](https://docs.docker.com/storage/volumes/)
 
@@ -72,43 +85,61 @@ See the list of containers
 	
  **run**
  
-`docker run -p 4000:80 myfirstdocker:latest ` 
+```shell
+$ docker run -p 4000:80 myfirstdocker:latest 
+``` 
 
 --> Run "myfirstdocker:latest" mapping port 4000 to 80
 	
-`sudo docker run -ti --rm myfirstdocker:latest  /bin/bash`
+  ```shell
+$ sudo docker run -ti --rm myfirstdocker:latest  /bin/bash
+```
 
 **register and run**
 	`
-`docker push username/repository:tag  `
+  ```shell
+  $ docker push username/repository:tag  
+  ```
 
 - Upload tagged image to registry
 
-`docker run username/repository:tag  `
+  ```shell
+  $ docker run username/repository:tag  
+  ```
 		
 - Run image from a registry
 	
-	
-
 **remove/stop**
 
-`docker container rm <hash>`
+  ```shell
+  $ docker container rm <hash>
+  ```
 
-`docker image rm <image id> `
+  ```shell
+  $ docker image rm <image id> 
+  ```
 		
 - Removes all:
 
-`docker container rm $(docker container ls -a -q) `
+  ```shell
+  $ docker container rm $(docker container ls -a -q) 
+  ```
 
-`docker image rm $(docker image ls -a -q)`
+  ```shell
+  $ docker image rm $(docker image ls -a -q)
+  ```
       
 - Forcefull:
 		
-`docker container rm -f $(docker container ls -a -q) `
+  ```shell
+$ docker container rm -f $(docker container ls -a -q) 
+```
 		
 - stop
 	
-`docker stop $(docker ps -a -q)`
+  ```shell
+$ docker stop $(docker ps -a -q)
+```
       
     
     
