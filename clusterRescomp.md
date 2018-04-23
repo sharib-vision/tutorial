@@ -135,6 +135,13 @@ qsum -u $USER (compact summary, use -h for help)
 
 ```
 
+See running jobs:
+
+```
+qstat -f -ne
+
+```
+
 Check/monitor state of execution hosts:
 
 ```
