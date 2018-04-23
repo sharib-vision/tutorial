@@ -44,7 +44,7 @@ If above prints you the name of the GPU then voila you are ready to go!
 
 About gpu see [here](https://rescomp.well.ox.ac.uk/wiki/Using_the_Rescomp_GPU_resources) <--- requires your credentials
 
-**Note if you go into different node then you will need to do activate your environment again (before that use `module use -a /mgmt/modules/eb/modules/all` + `module load Anaconda3/5.1.0`)**
+**Note if you go into different node then you will need to do activate your environment again (before that use or put in your .bashrc `module use -a /mgmt/modules/eb/modules/all` + `module load Anaconda3/5.1.0`)**
 
 - With torch for gpu
 
