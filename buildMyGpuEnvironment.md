@@ -67,6 +67,32 @@ For other packages just use
 (aligpu) $ pip install $packagename
 
 ```
+### Test
+
+- You have to go to the node where gpu is available
+
+```shell
+$ qlogin -P rittscher.prjb -q gpu9.q -pe shmem 1 -l gpu=1
+$ source activate aligpu(your virtual env.)
+
+```
+
+- Check pytorch-gpu 
+
+```shell
+python -c "import torch; print('N GPU: {}'.format(torch.cuda.device_count()))"
+```
+
+- Check tensorflow-gpu
+
+```shell
+$ python 
+
+>> import tensorflow as tf
+>> print(tf.__version__)
+>> sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+
+```
 
 
 
