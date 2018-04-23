@@ -88,6 +88,9 @@ $ source activate aligpu(your virtual env.)
 ```shell
 python -c "import torch; print('N GPU: {}'.format(torch.cuda.device_count()))"
 ```
+For compG002, you should get: 
+
+    N GPU: 1
 
 - Check tensorflow-gpu
 
@@ -96,9 +99,14 @@ $ python
 
 >> import tensorflow as tf
 >> print(tf.__version__)
->> sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+>> from tensorflow.python.client import device_lib
+>> print(device_lib.list_local_devices())
 
 ```
 
+For compG002, you should get: 
+
+    name: "/device:CPU:0"... (meaning 1 CPU)
+    name: "/device:GPU:0... (meaning 1 GPU)
 
 
