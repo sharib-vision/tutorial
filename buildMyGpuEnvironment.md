@@ -20,7 +20,7 @@ $ source activate aligpu
 ### Pytorch
 As explained [here](http://pytorch.org/).
 ```shell
-$ source activate alitorch
+$ source activate aligpu
 (aligpu) $ conda install pytorch torchvision cuda80 -c soumith
 (aligpu) $ conda install pytorch torchvision -c pytorch (default cuda 8.0, python3.5)
 (aligpu) $ conda install pytorch torchvision cuda90 -c pytorch
