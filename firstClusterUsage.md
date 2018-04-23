@@ -35,6 +35,11 @@ pip list (if you have installed using pip)
 import tensorflow as tf
 sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
+or 
+
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
+
 ```
 
 If above prints you the name of the GPU then voila you are ready to go!
