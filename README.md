@@ -1,8 +1,11 @@
-#### Basics on usages
-contributor: <sharib.ali@eng.ox.ac.uk>, <avelino.javer@eng.ox.ac.uk>
+**Lead contributors:**
+
+**Sharib Ali** <sharib.ali@eng.ox.ac.uk>, and 
+
+**Avelino Javer** <avelino.javer@eng.ox.ac.uk>
 
 
-##### What you will find?
+#### Basics on usages: What you will find?
 
 - [Conda basics and building virtual envs](https://gitlab.com/sharibOx/tutorials/blob/master/conda_essentials.md)
 
