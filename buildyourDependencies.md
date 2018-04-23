@@ -1,10 +1,10 @@
 ### Installed packages
 
 
-#### conda (installed with python 3.6)
-  [link](https://conda.io/miniconda.html)
+#### conda (installed with python 3.6, if conda missing)
+[link](https://conda.io/miniconda.html)
   	
-  		bash Miniconda3-latest-MacOSX-x86_64.sh
+    bash Miniconda3-latest-MacOSX-x86_64.sh
 
 #### Essentials
 ```
