@@ -28,12 +28,12 @@ $ source activate alitorch
 
 ### Tensorflow and keras
 
-```Tensorflow-gpu:
+```shell
 (aligpu) $conda install -c anaconda tensorflow-gpu
 
 ```
 
-```Keras-GPU:
+```shell
 (aligpu) $ conda install -c anaconda keras-gpu
 ```
 
