@@ -56,7 +56,7 @@ $ source activate aligpu
 
 ### Others
 
-    For other packages just use 
+For other packages just use 
    
 ``` shell
 (aligpu) $ conda install $packagename
