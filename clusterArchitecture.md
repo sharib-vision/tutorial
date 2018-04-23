@@ -13,11 +13,6 @@ Nodes | A | B  | C | D | H |
 
 Recommended to see: [here](https://rescomp.well.ox.ac.uk/wiki/Using_the_Rescomp_GPU_resources) <--- requires your credentials
 
-Nodes | compG000 | compG001  | compK000 |
---- | --- | ---| ---
-*Name* | quad T K80 | GeForce GTX680 | Knights |
-*cores* | 8x2496 | 1536+3584 | 64 | 64 | 2TB
-*mem/core* |  12G | 4G(DDR5)+12G(GDDR5) | 16G(DDR)+192G |
 
 
 *Note: Check pdfs sent by Jon for more details*
