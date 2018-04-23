@@ -11,6 +11,8 @@ Nodes | A | B  | C | D | H |
 
 **GPU**
 
+Recommended to see: [here](https://rescomp.well.ox.ac.uk/wiki/Using_the_Rescomp_GPU_resources) <--- requires your credentials
+
 Nodes | compG000 | compG001  | compK000 |
 --- | --- | ---| ---
 *Name* | quad T K80 | GeForce GTX680 | Knights |
