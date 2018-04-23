@@ -49,12 +49,19 @@ $ source activate aligpu
 
 ### Extras (packages that can be a bit tricky to install and may not function)
 
-conda install -c anaconda qt
-conda install matplotlib (*you might have problem with this if qt latest version is not installed*)
+```shell
+(aligpu) $ conda install -c anaconda qt
+(aligpu) $ conda install matplotlib (*you might have problem with this if qt latest version is not installed*)
+```
 
 ### Others
 
-    For other packages just use conda or pip to install
+    For other packages just use 
+   
+   ``` shell
+    (aligpu) $ conda install $packagename
+    (aligpu) $ pip install $packagename
+    ```
 
 
 
