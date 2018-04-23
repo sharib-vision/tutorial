@@ -7,6 +7,12 @@
 * tensorflow-gpu
 * CUDA (If you want to do any serious tests! But you can also run simple codes without CUDA/GPU)
 
+### ssh to recomp1/2
+
+```shell
+$ ssh username@rescomp1.well.ox.ac.uk
+```
+
 Make sure you are in rescomp home folder and nano .bashrc (put: `module use -a /mgmt/modules/eb/modules/all` and `module load Anaconda3/5.1.0`) so that it is linked to modules
 
 ### Creating virtual environment
