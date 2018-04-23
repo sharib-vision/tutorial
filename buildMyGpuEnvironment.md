@@ -98,7 +98,7 @@ For compG002, you should get:
 $ python 
 
 >> import tensorflow as tf
->> print(tf.__version__)
+>> print('version:',tf.__version__)
 >> from tensorflow.python.client import device_lib
 >> print(device_lib.list_local_devices())
 
@@ -106,6 +106,7 @@ $ python
 
 For compG002, you should get: 
 
+    version: 1.7.0
     name: "/device:CPU:0"... (meaning 1 CPU)
     name: "/device:GPU:0... (meaning 1 GPU)
 
