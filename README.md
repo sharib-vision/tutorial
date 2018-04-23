@@ -4,15 +4,17 @@ contributor: <sharib.ali@eng.ox.ac.uk>, <avelino.javer@eng.ox.ac.uk>
 
 ##### What you will find?
 
-- Installing packages with conda
-
-- Creating environments with Conda for your easy installations and avoiding conflicts
+- [Conda basics and building virtual envs](https://gitlab.com/sharibOx/tutorials/blob/master/conda_essentials.md)
 
 - [Docker deployment](https://gitlab.com/sharibOx/tutorials/blob/master/docker_essentials.md) 
 
-- Cluster rescompX usage 
+- [Cluster rescompX usage basic](https://gitlab.com/sharibOx/tutorials/blob/master/clusterRescomp.md) 
 
-- buidling your own softwares and dependencies using cmake/gmake
+- [Cluster rescompX gpu usage](https://gitlab.com/sharibOx/tutorials/blob/master/buildMyGpuEnvironment.md)
+
+- [Buidling your own softwares and dependencies using cmake/gmake](https://gitlab.com/sharibOx/tutorials/blob/master/buildyourDependencies.md)
+
+- [Manage your data and software builds for share](https://gitlab.com/sharibOx/tutorials/blob/master/putmyDataResComp.md)
 
 
 
