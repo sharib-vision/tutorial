@@ -22,8 +22,12 @@ As explained [here](http://pytorch.org/).
 ```shell
 $ source activate aligpu
 (aligpu) $ conda install pytorch torchvision cuda80 -c soumith
+or
 (aligpu) $ conda install pytorch torchvision -c pytorch (default cuda 8.0, python3.5)
+or 
 (aligpu) $ conda install pytorch torchvision cuda90 -c pytorch
+
+I did the last one!
 ```
 
 ### Tensorflow and keras
