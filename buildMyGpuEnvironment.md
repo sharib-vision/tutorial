@@ -4,7 +4,7 @@
 
 * python 3
 * [pytorch](http://pytorch.org/)
-* SimpleITK
+* tensorflow-gpu
 * CUDA (If you want to do any serious tests! But you can also run simple codes without CUDA/GPU)
 
 Make sure you are in rescomp home folder and nano .bashrc (put: `module use -a /mgmt/modules/eb/modules/all` and `module load Anaconda3/5.1.0`) so that it is linked to modules
