@@ -138,7 +138,20 @@ $ docker container rm -f $(docker container ls -a -q)
 $ docker stop $(docker ps -a -q)
 ```
   
-    
+### GUI
+
+open -a XQuartz
+
+
+In the XQuartz preferences, go to the “Security” tab and make sure you’ve got “Allow connections from network clients” ticked:
+
+ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+xhost + $ip
+
+
+-e DISPLAY=$ip:0 -v /tmp/.X11-unix:/tmp/.X11-unix
+
+[plugins](http://www.open-terrain.org/index.php/Pong/August30th2016QMediaPlayerOnUbuntu16-04LTS)
     
         
 		
