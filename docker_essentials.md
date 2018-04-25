@@ -152,6 +152,12 @@ xhost + $ip
 -e DISPLAY=$ip:0 -v /tmp/.X11-unix:/tmp/.X11-unix
 
 [plugins](http://www.open-terrain.org/index.php/Pong/August30th2016QMediaPlayerOnUbuntu16-04LTS)
+
+docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix:rw -e DISPLAY=unix$DISPLAY --device /dev/dri --privileged ubuntu 
+
+Then
+
+apt update && apt install --no-recommends -y nvidia-340 mesa-utils && glxgears
     
         
 		
