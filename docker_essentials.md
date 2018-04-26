@@ -160,5 +160,19 @@ Then
 apt update && apt install --no-recommends -y nvidia-340 mesa-utils && glxgears
     
         
-		
-		 
+### Dockerhub
+
+```shell
+$ docker tag firstimage YOUR_DOCKERHUB_NAME/firstimage
+
+```
+
+```shell		 
+$ docker push YOUR_DOCKERHUB_NAME/firstimage
+```
+
+```shell
+$ docker login 
+username: xxx (e.g, sharibox)
+password: xxxxx
+```
