@@ -21,7 +21,7 @@
 
 
 
-
+**coming soon!!! how to do parallel computing using matlab on rescomp**
 
 
 	
