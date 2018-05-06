@@ -36,7 +36,7 @@ bunnies               /home/username/miniconda/envs/bunnies
 
     conda install -c conda-forge opencv=3.4.1
 
-**Sharing an environment**
+**Sharing/export an environment**
 
 	source activate myenv
 	conda env export > environment.yml
