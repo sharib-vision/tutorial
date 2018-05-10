@@ -183,6 +183,10 @@ $ /mgmt/modules/eb/modules
 $ modules avail
 
 ```
+Check GPU type and capacities:
 
-
+```shell
+$ nvidia-smi
+$ print(torch.version.cuda)
+```
 
