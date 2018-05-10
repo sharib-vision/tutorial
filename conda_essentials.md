@@ -80,3 +80,7 @@ bunnies               /home/username/miniconda/envs/bunnies
 ```
 conda env create -f dependenciesInstall.yml
 ```
+
+#### Alternatively, you can also install dependencies using pip 
+
+	pip install -r requirements.txt
