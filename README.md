@@ -19,6 +19,8 @@
 
 - [Manage your data and software builds for share](https://gitlab.com/sharibOx/tutorials/blob/master/putmyDataResComp.md)
 
+- [Run my CPU script on cluster](https://github.com/sharibox/tutorial/blob/master/scriptForRunningParallelJobs.sh)
+
 
 
 *coming soon!!! how to do parallel computing using matlab on rescomp*
