@@ -21,7 +21,7 @@
 
 - [Run my CPU script on cluster](https://github.com/sharibox/tutorial/blob/master/scriptForRunningParallelJobs.sh)
 
-- [Leaving your work place, but want to keep your cluster job via ssh keep running?, see here]()
+- [Leaving your work place, but want to keep your cluster job via ssh keep running?, see here](https://github.com/sharibox/tutorial/blob/master/screen.md)
 
 
 *coming soon!!! how to do parallel computing using matlab on rescomp*
