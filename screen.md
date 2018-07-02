@@ -1,10 +1,8 @@
 #### About Screen 
 
- 
-        
-     ``The screen program allows you to use multiple windows (virtual VT100 terminals) in Unix.``
+``The screen program allows you to use multiple windows (virtual VT100 terminals) in Unix.``
      
-     See [here](https://kb.iu.edu/d/acuy)
+  See [here](https://kb.iu.edu/d/acuy)
      
 
 1.  To see the screen list 
