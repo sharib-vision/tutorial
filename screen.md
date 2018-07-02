@@ -25,7 +25,7 @@
         
 5.  To kill the screen
 
-       ctrl + A (then 'K' to kill)
+        ctrl + A (then 'K' to kill)
        
      
         
