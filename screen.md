@@ -24,10 +24,10 @@
 5.  To kill the screen
 
         ctrl + A (then 'K' to kill)
-       
+       The
      
         
         
- *Note: you will have to be in the same terminal to be able to resume the screen. The program will not run unless you resume the screen*
+ *Note: you will have to be in the same terminal to be able to resume the screen.*
  
  
