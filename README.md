@@ -23,6 +23,8 @@
 
 - [Leaving your work place, but want to keep your cluster job via ssh keep running?, see here](https://github.com/sharibox/tutorial/blob/master/screen.md)
 
+- [About github, some general toubles!]()
+
 
 *coming soon!!! how to do parallel computing using matlab on rescomp*
 
