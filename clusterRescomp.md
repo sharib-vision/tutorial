@@ -80,6 +80,8 @@ In brief install osxfuse and sshfs using homebrew. You can mount the files typin
 $ sudo sshfs -o allow_other,defer_permissions username@rescomp1.well.ox.ac.uk:/well/rittscher/users/ /Volumes/rescomp1
 ```
 
+``note: for LINUX/Ubuntu defer_permissions has to be replaced with default_permissions``
+
 ## Copy data to group data directory using ssh directly (linux/mac):
 
 ```shell
