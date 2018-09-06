@@ -15,7 +15,7 @@
         
 3.  To detach 
 
-        crtl+R then d
+        crtl+A then d
         
 4.  To resume screen 
 
