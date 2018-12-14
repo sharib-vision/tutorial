@@ -26,7 +26,6 @@
 - [About github, some general toubles!](https://github.com/sharibox/tutorial/blob/master/githubTroubles.md)
 
 
-*coming soon!!! how to do parallel computing using matlab on rescomp*
 
 
 	
