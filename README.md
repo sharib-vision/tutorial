@@ -7,7 +7,7 @@
 
 #### Basics on usages: What you will find?
 
-- [Conda basics and building virtual envs](https://gitlab.com/sharibOx/tutorials/blob/master/conda_essentials.md)
+- [Conda basics and building virtual envs](conda_essentials.md)
 
 - [Docker deployment](https://gitlab.com/sharibOx/tutorials/blob/master/docker_essentials.md) 
 
