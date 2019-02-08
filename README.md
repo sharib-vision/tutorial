@@ -9,15 +9,15 @@
 
 - [Conda basics and building virtual envs](conda_essentials.md)
 
-- [Docker deployment](https://gitlab.com/sharibOx/tutorials/blob/master/docker_essentials.md) 
+- [Docker deployment](docker_essentials.md) 
 
-- [Cluster rescompX usage basic](https://gitlab.com/sharibOx/tutorials/blob/master/clusterRescomp.md) 
+- [Cluster rescompX usage basic](clusterRescomp.md) 
 
-- [Cluster rescompX gpu usage](https://gitlab.com/sharibOx/tutorials/blob/master/buildMyGpuEnvironment.md)
+- [Cluster rescompX gpu usage](buildMyGpuEnvironment.md)
 
-- [Buidling your own softwares and dependencies using cmake/gmake](https://gitlab.com/sharibOx/tutorials/blob/master/buildyourDependencies.md)
+- [Buidling your own softwares and dependencies using cmake/gmake](buildyourDependencies.md)
 
-- [Manage your data and software builds for share](https://gitlab.com/sharibOx/tutorials/blob/master/putmyDataResComp.md)
+- [Manage your data and software builds for share](putmyDataResComp.md)
 
 - [Run my CPU script on cluster](https://github.com/sharibox/tutorial/blob/master/scriptForRunningParallelJobs.sh)
 
