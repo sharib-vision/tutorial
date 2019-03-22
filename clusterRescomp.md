@@ -152,6 +152,15 @@ $ qstat -f -ne
 
 ```
 
+Kill your jobs:
+
+```shell
+$ qdel $jobID
+
+$ qselect -u <username> | xargs qdel
+
+```
+
 Check/monitor state of execution hosts:
 
 ```shell
