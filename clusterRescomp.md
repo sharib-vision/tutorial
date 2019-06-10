@@ -120,6 +120,14 @@ and paste the link in your local browser and execute jupyter scripts.
 
 Sometimes the port might be in use. Then change the port and start again.
 
+You can also use jupyter on the GPU nodes by doing another tunneling between rescomp and your node. For example, to run a jupyter notebook on port 8888 of compG008 and accessible on port 8080 of rescomp, you would use the following tunneling: 
+
+```shell
+$ ssh -L 8080:localhost:8080 username@rescomp1.well.ox.ac.uk
+$ ssh -L 8080:localhost:8888 compG008
+$ jupyter notebook --no-browser --port=8888
+```
+
 
 ## Run your script in cluster: 
 
