@@ -105,7 +105,11 @@ $ docker run username/repository:tag
 ```
 		
 - Run image from a registry
-	
+
+**Docker push step-by-step**
+
+[see here](https://karlcode.owtelse.com/blog/2017/01/25/push-a-docker-image-to-personal-repository/)	
+
 **remove/stop**
 
 ```shell
